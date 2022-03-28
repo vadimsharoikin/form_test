@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<table class="table">
+		{% for data in object_list %}
+	    	<tr><td>{{data.json_field}}</td></tr>
+		{% endfor %}
+	</table>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+	<form class="main_form" method="post">
+		<h1>My form </h1>
+		{%csrf_token%}	
+		<div class="input_form" id="add_input">	
+			<input type="text" name="name" placeholder="input">
+		</div>
+		<input type="submit" value="Add input" id="add_fields" class="btn-form">
+		<input type="submit" name="Send" class="btn-form">
+	</form>
+{% endblock %}
